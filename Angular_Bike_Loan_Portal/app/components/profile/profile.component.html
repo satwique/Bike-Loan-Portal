@@ -1,0 +1,43 @@
+<app-customerpage></app-customerpage>
+<div class="container col-md-7 border border-info rounded">
+    <div class="d-flex justify-content-center">
+        <h3><b>Profile Information</b></h3><br>
+    </div>
+    <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShFkaGyotB76JlU0VkYXViuw3s5Bi95UBSlz6cPXEkjnOX1mqJybTlYjqCBHtBiJjlLKY&usqp=CAU" alt="profile.img" class="rounded-circle">
+    </div>
+<div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="applicantName">ApplicantName</label>
+            <input type="text" readonly class="form-control" id="name" name="username"[(ngModel)]="loan.applicantName">
+        </div>
+        <div class="form-group col-md-4 mx-5">
+            <label for="address">ApplicantAddress</label>
+            <input type="text" readonly class="form-control" id="address" name="adress"[(ngModel)]="loan.applicantAddress">
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="mobileNumber">Applicant Mobile Number</label>
+            <input type="number" readonly class="form-control" id="mobileNumber" name="mobileNumber"[(ngModel)]="loan.applicantMobile">
+        </div>
+        <div class="form-group col-md-4 mx-5">
+            <label for="email">Applicant Email id</label>
+            <input type="text" readonly class="form-control" id="email" name="email"[(ngModel)]="loan.applicantEmail">
+        </div>
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="loanid">Applicant Loan id</label>
+            <input type="text" readonly class="form-control" id="loanid" name="loanid"[(ngModel)]="loan.loanId">
+        </div>
+        
+        
+    </div>
+</form></div>
+</div>
+

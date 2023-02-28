@@ -1,0 +1,22 @@
+<<div class="page">
+    <div class="container col-md-7 mt-0 border rounded"id="edit">
+        <div class=""> 
+            <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-group col-md-6">
+        <label for="inputstate"><b>Upload Documents</b></label>
+        <select id="inputstate" class="form-control" >
+            <option selected>Please pick a type...</option>
+            <option>Aadhar card</option>
+            <option>Pancard</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm col-md-6">
+            <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" required>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="onSubmit()" [disabled]="!myForm.valid" >Apply Loan</button>
+</form>
+        </div>
+    </div>
+</div>>

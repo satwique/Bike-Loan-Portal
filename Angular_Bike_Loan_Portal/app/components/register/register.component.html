@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="block">
+    <form #myForm="ngForm" (ngSubmit)="registerSubmit(myForm.value)">
+        <h2>Signup</h2>
+        <input type="text" placeholder="Enter Username" [(ngModel)]="user.userName" class="inp" name="userName"required>
+        <input type="password" placeholder="Enter password" [(ngModel)]="user.userPassword" class="inp" name="userPassword" minlength="8" required>
+          
+           <input type="email" placeholder="Enter email" [(ngModel)]="user.userEmail" class="inp" name="userEmail" required>
+           
+           <input type="number" placeholder="Enter mobile number" [(ngModel)]="user.userMobile"class="inp" name="userMobile"required>
+        
+           <div class="btns">
+           <button [disabled]="!myForm.valid">SIGNUP</button>
+           <button (click)="goToLogin()">LOGIN</button>
+           </div>
+       </form>
+       </div>
+</div>
+

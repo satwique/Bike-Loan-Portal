@@ -1,0 +1,61 @@
+
+
+
+<div class="container col-md-7 border border-info rounded">
+    <div class="d-flex justify-content-center">
+        <h3><b>Loan Details</b></h3><br>
+    </div>
+   
+<div>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="applicantName">ApplicantName</label>
+            <input type="text" readonly class="form-control" id="applicantName" name="applicantName"[(ngModel)]="loan.applicantName">
+        </div>
+        <div class="form-group col-md-4 mx-5">
+            <label for="address">ApplicantAddress</label>
+            <input type="text" readonly class="form-control" id="address" name="address"[(ngModel)]="loan.applicantAddress">
+        </div>
+
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="mobileNumber">Applicant Mobile Number</label>
+            <input type="number" readonly class="form-control" id="mobileNumber" name="mobileNumber"[(ngModel)]="loan.applicantMobile">
+        </div>
+        <div class="form-group col-md-4 mx-5">
+            <label for="email">Applicant Email id</label>
+            <input type="text" readonly class="form-control" id="email" name="email"[(ngModel)]="loan.applicantAadhar">
+        </div>
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+            <label for="loanid">Applicant Loan id</label>
+            <input type="text" readonly class="form-control" id="loanid"name="loanid"[(ngModel)]="loan.loanId">
+        </div>
+        <div class="form-group col-md-4 mx-5">
+            <label for="applicantpan">ApplicantPan Number</label>
+            <input type="text" readonly class="form-control" id="applicantpan" name="applicantpan"[(ngModel)]="loan.applicantPan">
+        </div>
+
+        
+        
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4 mx-5">
+        </div>
+        <div class="form-group col-md-4 mx-5 " >
+            <label for="loantype">Applicant Loan Status</label>
+            <input style="background-color:aquamarine" type="text" readonly class="form-control" id="loantype" name="loantype"[(ngModel)]="loan.loantype">
+        </div>
+        
+    </div>
+
+
+</form></div>
+</div>
+<div id="r">
+<button ><a class="nav-link"id="s4" href="#">Logout</a></button>
+</div>

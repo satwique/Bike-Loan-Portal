@@ -1,0 +1,12 @@
+.container{
+    background-color: bisque;
+}
+.profile{
+    text-align: center;
+}
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -132px;
+    margin-left: -5px;
+}

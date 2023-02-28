@@ -1,0 +1,53 @@
+<style>
+  body{
+    background-color: blueviolet;
+  }
+    .toolbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color:bisque;
+        opacity:40%;
+        color:black;
+        font-weight: 600;
+        
+        
+      }
+      .toolbar h2{
+        margin: 10px;
+        margin-left: 50px;
+        opacity: 70%;
+        
+       
+      }
+    
+      .toolbar a {
+       font-size:larger;
+        margin: 0 10px;
+       
+      text-decoration: none;
+      }
+    .links{
+        
+        margin-left: 1150px;
+    }
+     
+      
+    </style>
+    <nav *ngIf="nav.visible">
+  <div  class="toolbar" role="banner">
+    
+    <h2>Bike Loan Portal</h2>
+      <div class="links">
+        <a routerLinkActive="active" routerLink="/login" >Login</a>
+        <a routerLinkActive="active" routerLink="/register" >Signup</a>
+      </div>
+      
+  </div>
+  </nav>
+  
+

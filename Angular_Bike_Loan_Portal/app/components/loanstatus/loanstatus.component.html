@@ -1,0 +1,7 @@
+
+    <form id="ss"class="form-inline" [formGroup]="loan">
+        <div class="search mt-4 mb-4">
+            <input class="form-control" type="search" placeholder="search with id" aria-label="Search" formControlName="id"ngmodel>
+            <button class="btn btn-warning" type="submit" (click)="loanstatus(loan.value)"[disabled]="loan.invalid">Search</button>
+        </div>
+    </form>

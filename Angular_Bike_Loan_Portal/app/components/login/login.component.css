@@ -1,0 +1,33 @@
+.block{
+    width: 360px;
+    height: 320px;
+    padding: 10px;
+    border: 1px solid gray;
+    background: linear-gradient(123deg,blue,red);
+    margin-bottom: 5px;
+}
+      .inp{
+        padding: 10px 10px;
+        margin: 10px;
+        width: 100%;
+       
+      }
+      .btns{
+          display: flex;
+          justify-content:space-between ;
+      }
+      h2{
+        color:white;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+      form{
+    
+        width: 90%;
+        margin: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    

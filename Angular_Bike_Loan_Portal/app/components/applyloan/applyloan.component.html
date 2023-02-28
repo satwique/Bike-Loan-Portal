@@ -1,0 +1,52 @@
+<div class="page">
+    <div class="container col-md-7 mt-0 border rounded"id="edit">
+        <div class="">
+            <br>
+            <form #myForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="form">
+                    <div class="form-group">
+                        <label for="name"><b>Applicant Name</b></label>
+                        <input type="text"  [(ngModel)]="loan.applicantName"class="form-control" name="applicantName" id="name"placeholder="Enter name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress"><b>Address</b></label>
+                        <input type="text" [(ngModel)]="loan.applicantAddress" name="applicantAddress" class="form-control" id="inputAddress" placeholder="Enter address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileNumber"><b>Enter mobileNumber:</b></label>
+                        <input type="number" [(ngModel)]="loan.applicantMobile" name="applicantMobile"class="form-control"id="mobileNumber" placeholder="Enter mobile number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="aadharNumber"><b>Aadhar No</b></label>
+                        <input type="number" [(ngModel)]="loan.applicantAadhar" name="applicantAadhar" class="form-control" id="aadharNumber" placeholder="Enter Aadhar Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail4"><b>Email Id</b></label>
+                        <input type="email" [(ngModel)]="loan.applicantEmail"name="applicantEmail" class="form-control" id="inputEmail4"placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pancard"><b>Pan Number</b></label>
+                    <input type="number" [(ngModel)]="loan.applicantPan" name="applicantPan" class="form-control"id="pancard" placeholder="Enter Pan number" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group mx-2 col-md-6">
+                        <label for="salary"><b>Applicant salary</b></label>
+                        <input type="number" [(ngModel)]="loan.applicantSalary"name="applicantSalary"  class="form-control"id="salary" placeholder="Enter Applicant salary" required>
+                    </div>
+                    <div class="form-group mx-2 col-md-6">
+                        <label for="loanamount"><b>Loan Amount</b></label>
+                        <input type="number"[(ngModel)]="loan.loanAmountRequires" name="loanAmountRequires"class="form-control"id="loanamount" placeholder="Enter Loan Amount" required>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="repaymentmonth"><b>Loan Repayment Month</b></label>
+                        <input type="number" [(ngModel)]="loan.loanRepaymentsMonths" name="loanRepaymentsMonths" class="form-control"id="repaymentmonth" placeholder="Loan Repayment Month" required>
+                    </div>
+                </div>
+               
+                <button type="button" class="btn btn-primary" (click)="onSubmit()" [disabled]="!myForm.valid" >Apply</button>
+            </form>
+        </div>
+    </div>
+</div>
+

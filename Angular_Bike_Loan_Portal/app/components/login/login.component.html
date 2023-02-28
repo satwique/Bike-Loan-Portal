@@ -1,0 +1,24 @@
+<div class="wrapper">
+    <div class="block">
+    <form #myForm="ngForm" (ngSubmit)="login(myForm)">
+        <h2>Login</h2>
+        <input type="text" placeholder="Enter Username" ngModel class="inp" name="userName"required>
+           <input type="password"  [type]="showPassword ? 'text' : 'password'" id="inputPassword" ngModel class="inp" name="userPassword" placeholder="password"  required> 
+           <div>
+            <i alt="show" class="far fa-eye eye-show" 
+            (click)="showPassword = !showPassword"
+            [class.hide]="showPassword"></i>
+            <i alt="hide" class="far fa-eye-slash eye-hide" 
+            (click)="showPassword = !showPassword"
+            [class.hide]="!showPassword"></i>
+          </div>
+           
+           
+           <div class="btns">
+           <button  [disabled]="!myForm.valid">LOGIN</button>
+           
+           <button (click)="goToRegister()">SIGNUP</button>
+           </div>
+       </form>
+       </div>
+</div>

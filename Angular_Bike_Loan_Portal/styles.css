@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('https://i.pinimg.com/736x/10/35/b5/1035b5ec533f1d2f55798b8ce0462fd7.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+     
+    
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    background: skyblue;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 150px;
+    text-align: center;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 320px;
+    padding: 10px;
+    border: 1px solid gray;
+    background: linear-gradient(123deg,blue,red);
+}
+button:disabled{
+    background: gray;
+    color:white;
+    opacity:0.8;
+    cursor: not-allowed;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

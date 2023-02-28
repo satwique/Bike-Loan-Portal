@@ -1,0 +1,32 @@
+#edit{
+    
+    text-align: center;
+    color: blueviolet;
+    align-content: center;
+    justify-content: center;
+   
+    margin-right: 40%50%;
+}
+#ss{
+    background-color: aqua;
+    text-align: center;
+    color: blueviolet;
+    align-content: center;
+    justify-content: center;
+   
+    margin-right: 40%50%;
+}
+#qq{
+   align-content: center;
+   
+display: flex;
+justify-content: center;
+}
+
+#edi{
+    background-color: bisque;
+
+}
+#s3{
+    background-color:aqua
+}

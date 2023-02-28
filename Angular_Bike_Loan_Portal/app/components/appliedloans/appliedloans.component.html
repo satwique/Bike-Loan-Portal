@@ -1,0 +1,51 @@
+<app-adminpage></app-adminpage>
+<div class="container">
+    <form class="form-inline">
+        <div class="mt-3 mb-3">
+
+        </div>
+    </form>
+    <div >
+        <mat-card>
+    <table class="table border"  >
+        <th></th>
+        <tbody *ngFor="let loan1 of loan"  >
+            <ng-container *ngIf="loan1.loantype=='Pending'"> 
+            <tr>
+                <td ><b>Applicant name:</b>{{loan1.applicantName}}</td>
+                <td><b>Applicant phone number:</b>{{loan1.applicantMobile}}</td>
+                <td><b>applicant pan no.:</b>{{loan1.applicantPan}}</td>
+            </tr>
+            <tr>
+                <td><b>Applicant Address:</b>{{loan1.applicantAddress}}</td>
+                <td><b>Applicant Loan Id:</b>{{loan1.loanId}}</td>
+                <td><b>Applicant Loan Amount:</b>{{loan1.loanAmountRequires}}</td>
+            </tr>
+            <tr>
+                <td><b>Applicant Email:</b>{{loan1.applicantEmail}}</td>
+                <td><b>Applicant aadhar:</b>{{loan1.applicantAadhar}}</td>
+                <td id="ss">{{loan1.loantype}}</td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn btn-success" id="acc" (click)="accept(this.loan1.loanId,this.loan1)">Accept</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger" id="rej"(click)="reject(this.loan1.loanId,this.loan1)">Reject</button>
+                </td>
+           
+             </tr>
+           
+            <br>
+            <br>
+        </ng-container>
+        </tbody>
+        
+       
+    </table>
+</mat-card>
+</div>
+    
+    
+
